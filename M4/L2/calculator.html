@@ -15,9 +15,6 @@
     <input type="number" name="num2" id="num2">
 
     <p id="input"></p>
-    <button type="button" class="btn btn-primary" onclick="add()">add</button>
-    <button type="button" class="btn btn-warning" onclick="subtract()">subtract</button>
-    <button type="button" class="btn btn-info" onclick="divide()">divide</button>
     <button type="button" class="btn btn-danger" onclick="multiply()">multiply</button>
     <p id="output"></p>
 
@@ -28,27 +25,9 @@
 
 
 
-        function add() {
-            var num1 = Number(document.getElementById("num1").value)
-            var num2 = Number(document.getElementById("num2").value)
 
 
-            document.getElementById("output").innerHTML = "sum=" + (num1 + num2)
-        }
-        function subtract() {
-            var num1 = document.getElementById("num1").value
-            var num2 = document.getElementById("num2").value
 
-            document.getElementById("output").innerHTML = "subtraction=" + (num1 - num2)
-
-        }
-        function divide() {
-            var num1 = document.getElementById("num1").value
-            var num2 = document.getElementById("num2").value
-
-            document.getElementById("output").innerHTML = "division=" + (num1 / num2)
-
-        }
         function multiply() {
             var num1 = document.getElementById("num1").value
             var num2 = document.getElementById("num2").value
