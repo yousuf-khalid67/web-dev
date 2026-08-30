@@ -9,45 +9,58 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1>My planet cards</h1>
-    <button type="button" class="btn btn-danger">show planets!</button>
+<body class="d-flex flex-column justify-content-center align-items-center gap-3" >
+    <h1 class="text-primary">My planet cards</h1>
+    <button type="button" class="btn btn-primary" onclick="show_planets()">show planets!</button>
+    <div class="cards d-flex justify-content-center align-items-center gap-3">
+        <div class="card p-2 border border-primary">
+            <div class="card-body" id="card1">
+                <h2 id="p1-heading"></h2>
+                <p id="p1-fact"></p>
+            </div>
+        </div>
 
-    <div class="card">
-        <div class="card-body">
-            <h2>Earth</h2>
-            <p>Earth:The only planet with life</p>
+        <div class="card p-2 border border-primary">
+            <div class="card-body" id="card2">
+                <h2 id="p2-heading"></h2>
+                <p id="p2-fact"></p>
+            </div>
+        </div>
+
+        <div class="card p-2 border border-primary">
+            <div class="card-body" id="card3">
+                <h2 id="p3-heading"></h2>
+                <p id="p3-fact"></p>
+            </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
-            <h3>Mars</h3>
-            <p>Mars: Known as the red planet</p>
-        </div>
-    </div>
+    <script>
+        class Planet {
+            constructor(name, fact) {
+                this.name = name
+                this.fact = fact
+            }
+            descride() {
+                return this.name + " : " + this.fact
 
-    <div class="card">
-        <div class="card-body">
-            <h4>Saturn</h4>
-            <p>Saturn: Has rings made of ice</p>
-        </div>
-    </div>
-<script>
-    class Planet{
-        constructor(name,fact){
-            this.name=name
-            this.fact=fact
+            }
+
         }
-        descride(){
-            return this.name+":"+this.fact
+        function show_planets() {
+            let p1 = new Planet("Earth", "The only planet with life")
+            let p2 = new Planet("Mars", "Known as the red planet")
+            let p3 = new Planet("Jupiter", "Has rings made of ice")
 
+            document.getElementById("p1-heading").innerHTML = p1.name
+            document.getElementById("p2-heading").innerHTML = p2.name
+            document.getElementById("p3-heading").innerHTML = p3.name
+            document.getElementById("p1-fact").innerHTML = p1.descride()
+            document.getElementById("p2-fact").innerHTML = p2.descride()
+            document.getElementById("p3-fact").innerHTML = p3.descride()
         }
 
-    }
-
-    let p1
-</script>
+    </script>
 
 
 
