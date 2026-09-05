@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>array sorting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>array sorting</h1>
+    <p id="display"></p>
+    <button type="button" class="btn btn-dark" onclick="ascend()">sort (ascending)</button>
+    <button type="button" class="btn btn-dark" onclick="descend()">sort (descending)</button>
+    <button type="button" class="btn btn-dark" onclick="find_reverse()">reverse</button>
+    <button type="button" class="btn btn-dark" onclick="find_square()">square</button>
+    <script>
+        var numbers = [33, 5, 46, 75, 8]
+        document.getElementById("display").innerHTML = numbers
+        function ascend() {
+            numbers.sort((a, b) => a - b)
+            document.getElementById("display").innerHTML = numbers
+
+
+        }
+        function descend() {
+            document.getElementById("display").innerHTML = numbers
+            numbers.sort((a, b) => b - a)
+            document.getElementById("display").innerHTML = numbers
+        }
+        function find_reverse() {
+            numbers.reverse()
+            document.getElementById("display").innerHTML = numbers
+
+        }
+        function find_square() {
+            function square(n) {
+                return n * n
+            }
+            var squared_numbers = numbers.map(square)
+            document.getElementById("display").innerHTML = squared_numbers
+        }
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
