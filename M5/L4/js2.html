@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript in detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>JavaScript in detail</h1>
+    <h3>typeof</h3>
+    <p id="typeof-1"></p>
+    <p id="typeof-2"></p>
+    <p id="typeof-3"></p>
+    <p id="typeof-4"></p>
+    <h3>converting data types</h3>
+    <p id="datatype-1"></p>
+    <p id="datatype-2"></p>
+    <p id="datatype-3"></p>
+    <p id="datatype-4"></p>
+    <h3>search and replace</h3>
+    <p id="SAR-1"></p>
+    <p id="SAR-2"></p>
+    <p id="SAR-3"></p>
+
+
+    <script>
+        document.getElementById("typeof-1").innerHTML = typeof 42
+        document.getElementById("typeof-2").innerHTML = typeof 'Alex'
+        document.getElementById("typeof-3").innerHTML = typeof true
+        var score = 100;
+        document.getElementById("typeof-4").innerHTML = typeof score
+
+
+        var age = 12;
+        document.getElementById("datatype-1").innerHTML = String(age)
+        document.getElementById("datatype-2").innerHTML = typeof String(age)
+        document.getElementById("datatype-3").innerHTML = Number("25")
+        document.getElementById("datatype-4").innerHTML = Number("hello")
+
+
+        var sentence = "The dragon flew over the big castle.";
+        document.getElementById("SAR-1").innerHTML = sentence.search("dragon")
+        document.getElementById("SAR-2").innerHTML = sentence.search("wizard")
+        document.getElementById("SAR-3").innerHTML = sentence.replace("dragon", "wizard")
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
