@@ -29,6 +29,10 @@
             width: auto;
         }
 
+        #home {
+            background: linear-gradient(to bottom right, white, rgba(88, 88, 88, 0.761));
+        }
+
         /* Links */
         .navigation-link {
             text-decoration: none;
@@ -51,6 +55,9 @@
         rel="stylesheet" />
 
     <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -72,15 +79,14 @@
                         <a href="#projects" class="text-white navigation-link">Projects</a>
                     </div>
                     <div class="col-3">
-                        <a href="#contact"
-                            target="_blank" class="text-white navigation-link">Contact</a>
+                        <a href="#contact" target="_blank" class="text-white navigation-link">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="home" class="d-flex flex-column gap-3 justify-content-center align-items-center py-5">
+    <section id="home" class="d-flex flex-column gap-3 justify-content-center align-items-center vh-100">
         <h1 class="display-2">Hi I am YOUSUF</h1>
         <h2>I build interactive web apps</h2>
         <div>
@@ -89,10 +95,47 @@
         </div>
     </section>
 
-    <section id="about"></section>
+    <section id="about my-5 py-5 ">
+        <h2 class="text-center">About Me</h2>
+        <div class="d-flex gap-4 p-5 my-5">
+            <div>
+                <p class="lead fs-3">I am an enthusiastic aspiring developer at the early stages of my coding journey, passionate about
+                    creating engaging web
+                    pages and actively expanding my foundation in HTML and CSS.</p>
+
+
+                <p class="fs-4">Through hands-on practice, I have built practical projects combining the logic of Python with clean
+                    HTML structure. I
+                    love turning ideas into functional code and continuously challenging myself to learn more every day.
+                </p>
+            </div>
+            <div>
+                <h4>Core Technologies</h4>
+                <div class="d-flex gap-2 ">
+                    <h4><span class="badge text-bg-secondary">HTML</span></h4>
+                    <h4><span class="badge text-bg-secondary">CSS</span></h4>
+                    <h4><span class="badge text-bg-secondary">BOOTSTRAP</span></h4>
+                    <h4><span class="badge text-bg-secondary">JAVASCRIPT</span></h4>
+                    <h4><span class="badge text-bg-secondary">PYTHON</span></h4>
+                    <h4><span class="badge text-bg-secondary">GITHUB</span></h4>
+                    <h4><span class="badge text-bg-secondary">SCRATCH</span></h4>
+                    <h4><span class="badge text-bg-secondary">ML4K</span></h4>
+                    <h4><span class="badge text-bg-secondary">TEACHABLE MACHIENE</span></h4>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
     <section id="projects"></section>
     <section id="contact"></section>
     <section id="copyright"></section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </body>
 
